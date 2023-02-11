@@ -1,0 +1,112 @@
+.booksItemTable {
+  padding: 8px 8px 16px 8px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 10px;
+  .booksItem__img {
+    border-radius: 10px;
+    border-bottom: none;
+    height: 242px;
+    margin-bottom: 17px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  .booksItem__rating {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #a7a7a7;
+    margin-bottom: 16px;
+    height: 24px;
+  }
+  .booksItem__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #363636;
+    height: 54px;
+  }
+  .booksItem__authors {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #727272;
+    margin-bottom: 22px;
+    height: 32px;
+  }
+  .booksItem__btn {
+    display: block;
+    height: 40px;
+    background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+    border-radius: 20px;
+    border: none;
+    width: 166px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 auto;
+  }
+  .busy {
+    background: #ffffff;
+    border: 1px solid #bfc4c9;
+    color: #363636;
+  }
+  .busy-until {
+    background: #f9f9fa;
+    border: 1px solid #bfc4c9;
+    color: #a7a7a7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .booksItemTable {
+    .booksItem__title {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .booksItem__authors {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .booksItemTable {
+    padding: 8px 16px 16px 16px;
+    .booksItem__title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .booksItem__authors {
+      font-weight: 400;
+    }
+    .booksItem__img {
+      max-width: 174px;
+      margin: 0 auto 18px;
+    }
+    .booksItem__rating {
+      margin-bottom: 16px;
+    }
+    .booksItem__btn {
+      width: 100%;
+    }
+  }
+}

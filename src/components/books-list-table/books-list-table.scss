@@ -1,0 +1,36 @@
+.BooksListTable {
+  display: grid;
+  grid-template-columns: repeat(4, 190px);
+  justify-content: space-between;
+  gap: 23px 0;
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .BooksListTable {
+    grid-template-columns: repeat(3, 190px);
+    margin-top: 24px;
+    gap: 31px 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .BooksListTable {
+    grid-template-columns: repeat(2, 190px);
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .BooksListTable {
+    grid-template-columns: repeat(1, 190px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .BooksListTable {
+    grid-template-columns: repeat(1, 100%);
+    margin-top: 20px;
+    gap: 16px 0;
+  }
+}
